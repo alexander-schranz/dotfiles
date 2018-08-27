@@ -46,10 +46,6 @@ set number
 " relative line numbers
 set rnu
 
-" highlight search
-hi Search ctermbg=LightYellow
-hi Search ctermfg=Black
-
 " disable that line numbers are also copied
 set mouse=a
 
@@ -63,5 +59,9 @@ let g:ctrlp_custom_ignore = '\v(node_modules|vendor/.*/vendor|var/cache|tests/Re
 " enable cr expansion
 let delimitMate_expand_cr = 1
 
-" ariline theme
+" theme
+syntax enable
+colorscheme OceanicNext
+
+" airline theme
 let g:airline_theme='oceanicnext'
