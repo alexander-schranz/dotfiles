@@ -1,34 +1,36 @@
 " plugins
 call plug#begin('~/.local/share/nvim/plugged')
-" completion
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'phpactor/ncm2-phpactor'
-" completion for quotes, parans, brackets, etc.
-Plug 'mhartington/oceanic-next'
-" comment stuff out
-Plug 'tpope/vim-commentary'
-" quoting/parenthesizin
-Plug 'tpope/vim-surround'
-" git wrapper
-Plug 'tpope/vim-fugitive'
-" show git diff
-Plug 'airblade/vim-gitgutter'
-" File finder 
-Plug 'ctrlpvim/ctrlp.vim'
-" theme
-Plug 'Raimondi/delimitMate'
-" status bar
-Plug 'vim-airline/vim-airline'
-" ack support
-Plug 'mileszs/ack.vim'
-" php
-Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
-" linting
-Plug 'w0rp/ale'
+    " completion
+    Plug 'ncm2/ncm2'
+    Plug 'roxma/nvim-yarp'
+    Plug 'phpactor/ncm2-phpactor'
+    " completion for quotes, parans, brackets, etc.
+    Plug 'mhartington/oceanic-next'
+    " comment stuff out
+    Plug 'tpope/vim-commentary'
+    " quoting/parenthesizin
+    Plug 'tpope/vim-surround'
+    " git wrapper
+    Plug 'tpope/vim-fugitive'
+    " show git diff
+    Plug 'airblade/vim-gitgutter'
+    " file finder
+    Plug 'ctrlpvim/ctrlp.vim'
+    " theme
+    Plug 'Raimondi/delimitMate'
+    " status bar
+    Plug 'vim-airline/vim-airline'
+    " ack support
+    Plug 'mileszs/ack.vim'
+    " php
+    Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
+    " linting
+    Plug 'w0rp/ale'
+    " trim
+    Plug 'koryschneider/vim-trim'
 call plug#end()
 
-" automplete
+" autocomplete
 autocmd BufEnter * call ncm2#enable_for_buffer()
 set completeopt=noinsert,menuone,noselect
 let g:python3_host_prog = '/usr/local/bin/python3'
@@ -42,13 +44,13 @@ set expandtab
 " show line numbers
 set number
 " relative line numbers
-"set rnu
+set rnu
 
 " highlight search
 hi Search ctermbg=LightYellow
 hi Search ctermfg=Black
 
-" disable that line numbers are also copied 
+" disable that line numbers are also copied
 set mouse=a
 
 " decrease updatetime for gitcutter
