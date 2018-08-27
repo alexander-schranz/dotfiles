@@ -28,6 +28,8 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'w0rp/ale'
     " trim
     Plug 'koryschneider/vim-trim'
+    " file tree
+    Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " autocomplete
@@ -65,3 +67,24 @@ colorscheme OceanicNext
 
 " airline theme
 let g:airline_theme='oceanicnext'
+
+" NERDtree
+"
+hi treeDir guifg=#FFFFFF guibg=#00ff00
+" map ctrl+n to nerdtree
+map <C-n> :NERDTreeToggle<CR>
+" nerdtree code highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('js', 'red', 'none', '#ffa500', '#151515')
+call NERDTreeHighlightFile('php', 'magenta', 'none', '#ff00ff', '#151515')
