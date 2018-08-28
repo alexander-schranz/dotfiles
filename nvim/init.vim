@@ -69,8 +69,6 @@ colorscheme OceanicNext
 let g:airline_theme='oceanicnext'
 
 " NERDtree
-"
-hi treeDir guifg=#FFFFFF guibg=#00ff00
 " map ctrl+n to nerdtree
 map <C-n> :NERDTreeToggle<CR>
 " nerdtree code highlighting
