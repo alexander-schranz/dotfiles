@@ -65,6 +65,9 @@ let delimitMate_expand_cr = 1
 syntax enable
 colorscheme OceanicNext
 
+" copy to system clipboard
+set clipboard=unnamed
+
 " airline theme
 let g:airline_theme='oceanicnext'
 
