@@ -1,0 +1,9 @@
+{
+    "config": {
+        "preferred-install": {
+            "sulu/*": "source",
+            "handcraftedinthealps/*": "source",
+            "massive/*": "source"
+        }
+    }
+}
