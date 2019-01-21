@@ -1,0 +1,5 @@
+# Symlink file to ~/.composer/.gitignore and run following command
+# git config --global core.excludesfile '~/.composer/.gitignore'
+
+# IDE
+.idea/
