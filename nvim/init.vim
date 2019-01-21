@@ -1,3 +1,9 @@
+" Install neovim
+" Symlink this file into ~/.config/nvim/init.vim
+" Install vim-plug https://github.com/junegunn/vim-plug
+" Open nvim and run: :PlugInstall
+" Requires python3 for autocomplete
+
 " plugins
 call plug#begin('~/.local/share/nvim/plugged')
     " completion
