@@ -4,3 +4,7 @@ alias gt=git
 alias vim=nvim
 alias nvm=fnm
 alias phpstorm="open -a PhpStorm ./"
+alias browse="open http://(basename (pwd))"
+alias browseadmin="open http://(basename (pwd))/admin"
+alias b=browse
+alias ba=browseadmin
