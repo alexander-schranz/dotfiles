@@ -1,6 +1,9 @@
 # Symlink file to ~/.composer/.gitignore and run following command
 # git config --global core.excludesfile '~/.composer/.gitignore'
 
+# System files
+.DS_Store
+
 # IDE
 .idea/
 101300
