@@ -10,4 +10,5 @@ alias browseadmin="open http://(basename (pwd))/admin"
 alias trello="open -a \"Google Chrome\" https://trello.com/"
 alias b=browse
 alias ba=browseadmin
+alias suluserver="php -S localhost:8000 -t public/ config/router.php"
 alias suluphpunit="../../../../vendor/bin/phpunit"
