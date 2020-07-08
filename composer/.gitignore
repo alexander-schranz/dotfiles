@@ -7,3 +7,6 @@
 # IDE
 .idea/
 101300
+
+# PHPunit Result cache
+.phpunit.result.cache
