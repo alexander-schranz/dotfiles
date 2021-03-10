@@ -3,6 +3,7 @@
         "preferred-install": {
             "sulu/*": "source",
             "l91/*": "source",
+            "php-task/*": "source",
             "handcraftedinthealps/*": "source",
             "massive/*": "source"
         }
