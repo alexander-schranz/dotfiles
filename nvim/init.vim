@@ -49,6 +49,9 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+" disable folding
+set nofoldenable
+
 " show line numbers
 set number
 " relative line numbers
