@@ -14,3 +14,4 @@ alias b=browse
 alias ba=browseadmin
 alias suluserver="php -S localhost:8000 -t public/ config/router.php"
 alias suluphpunit="../../../../vendor/bin/phpunit"
+alias git_recent_branches='bash -c \'for k in `git branch | sed s/^..//`; do echo -e `git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $k --`\\\\\\\\t"$k";done | sort -r | head -n 10\''
