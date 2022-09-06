@@ -3,6 +3,8 @@
         "preferred-install": {
             "sulu/*": "source",
             "l91/*": "source",
+            "schranz/*": "source",
+            "schranz-templating/*": "source",
             "php-task/*": "source",
             "handcraftedinthealps/*": "source",
             "massive/*": "source"
