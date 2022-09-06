@@ -10,3 +10,8 @@
 
 # PHPunit Result cache
 .phpunit.result.cache
+.deptrac.cache
+.php-cs-fixer.cache
+.eslintcache
+
+.elasticbeanstalk/
